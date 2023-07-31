@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korean with Miss Kang</title>
+  <link rel="stylesheet" href="dist/styles.css" />
+  <script src="dist/script.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10">
+    <ul class="font-montserrat items-center hidden md:flex">
+      <li class="mx-3 ">
+        <a class="growing-underline" href="#reviews">
+          Testimonials
+        </a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#about">About Miss Kang</a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#faq">FAQ</a>
+      </li>
+    </ul>
+    <div id="showMenu" class="md:hidden">
+      <img src='dist/assets/logos/Menu.svg' alt="Menu icon" />
+    </div>
+  </nav>
+  <div id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-secondary z-20 animate-fade-in-down">
+    <div id="hideMenu" class="flex justify-end">
+      <img src='dist/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+    </div>
+    <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
+      <li class="my-6">
+        <a href="#reviews">Testimonials</a>
+      </li>
+      <li class="my-6">
+        <a href="#about">About Miss Kang</a>
+      </li>
+      <li class="my-6">
+        <a href="#faq">FAQ</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section
+    class="pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
+    <div class="md:flex-1 md:mr-10">
+      <h1 class="font-pt-serif text-5xl font-bold mb-7">
+        Interactive group zoom lessons, taught by Miss Kang.
+
+        <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 mb-8 bg-100%">
+          Learn Korean!
+        </span>
+      </h1>
+      <p class="font-pt-serif font-normal mb-7">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum
+        tempore consectetur voluptas, cumque nobis laboriosam voluptatem.
+      </p>
+      <!-- <div class="font-montserrat">
+        <button class="bg-black px-6 py-4 rounded-lg border-2 border-black border-solid text-white mr-2 mb-2">
+          Call to action
+        </button>
+        <button class="px-6 py-4 border-2 border-black border-solid rounded-lg">
+          Secondary action
+        </button>
+      </div> -->
+    </div>
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
+      <div class="relative">
+        <img src='dist/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10" />
+      </div>
+      <img src='dist/assets/korean.jpg' alt="korean" />
+      <div class="relative">
+        <img src='dist/assets/Highlight2.svg' alt="" class="absolute -bottom-10 -right-6" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="bg-black text-white sectionSize" id="reviews">
+    <div>
+      <h2 class="secondaryTitle bg-underline2 bg-100%">Testimonials</h2>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <h3 class="font-montserrat font-medium text-xl mb-2">Jimmy, a child</h3>
+        <p class="text-center font-montserrat">
+          "I learned sign language and korean! I love miss kang's class"
+        </p>
+      </div>
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <h3 class="font-montserrat font-medium text-xl mb-2">Penny, teenager</h3>
+        <p class="text-center font-montserrat">
+          "Miss Kang so good at what she does!"
+        </p>
+      </div>
+      <div class="flex-1 mx-8 flex flex-col items-center my-4">
+        <h3 class="font-montserrat font-medium text-xl mb-2">Ms. Huang, an adult</h3>
+        <p class="text-center font-montserrat">
+          "I tried other korean classes but finally started to see progress thanks for Miss Kang."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="sectionSize bg-secondary" id="about">
+    <div>
+      <h2 class="secondaryTitle bg-underline3 bg-100%">About</h2>
+    </div>
+    <div class="md:grid md:grid-cols-2 md:grid-rows-2">
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl"></h3>
+          <p>
+            Miss Kang is a music teacher for the LAUSD and has been teaching korean lessons for the past few years.
+          </p>
+        </div>
+      </div>
+<!-- 
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start font-montserrat my-6 mr-10">
+        <img src='dist/assets/logos/Heart.svg' alt='' class="h-7 mr-4" />
+        <div>
+          <h3 class="font-semibold text-2xl">Feature #4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Quisquam voluptate praesentium tenetur earum repellendus! Dicta
+            culpa consequuntur saepe quibusdam labore, est ex ducimus
+            tempore, quos illum officiis, pariatur ea placeat.
+          </p>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+
+  <!-- FAQ  -->
+  <section class="sectionSize items-start pt-8 md:pt-36 bg-black text-white" id="faq">
+    <div>
+      <h2 class="secondaryTitle bg-highlight3 p-10 mb-0 bg-center bg-100%">
+        FAQ
+      </h2>
+    </div>
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          Is there a maximum number of students per class?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Yes!      
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          What is the duration of each lesson?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Please add them here
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          How much do the lessons cost?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Please add them here
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          How can I sign up for the classes?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Please add them here
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          What teaching methods does Miss Kang use?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Please add them here
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+    <div toggleElement class="w-full py-4">
+      <div class="flex justify-between items-center">
+        <div question class="font-montserrat font-medium mr-auto">
+          Are there any prerequisites for joining?
+        </div>
+        <img src='dist/assets/logos/CaretRight.svg' alt="" class="transform transition-transform" />
+      </div>
+      <div answer class="font-montserrat text-sm font-extralight pb-8 hidden">
+        Please add them here
+      </div>
+    </div>
+    <hr class="w-full bg-white" />
+
+  </section>
+
+  <!-- Footer -->
+  <section class="bg-black sectionSize">
+
+    <div class="flex mb-8">
+      <a href="#">
+        <img src='dist/assets/logos/Facebook.svg' alt="Facebook logo" class="mx-4" />
+      </a>
+    </div>
+    <div class="text-white font-montserrat text-sm">
+    </div>
+  </section>
+</body>
+
+</html>
